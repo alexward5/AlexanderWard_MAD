@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsB-cW-jZB">
+                                <rect key="frame" x="93" y="8" width="228" height="52"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                <state key="normal" title="Colorado Sports">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseTeam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqI-6b-6rI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Colorado" translatesAutoresizingMaskIntoConstraints="NO" id="w3p-tt-te9">
+                                <rect key="frame" x="0.0" y="109" width="414" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="hCG-ni-VC0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYd-mD-COK">
+                                <rect key="frame" x="167" y="57" width="82" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="QlS-vp-shr"/>
+                                    <constraint firstAttribute="width" constant="82" id="bJt-B2-jUy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Rockies">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseTeam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QPu-bD-BuX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCS-NV-M9N">
+                                <rect key="frame" x="271" y="57" width="82" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="rX2-Mi-SlB"/>
+                                    <constraint firstAttribute="height" constant="31" id="sSs-40-9Es"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Avalanche">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseTeam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Lc-NF-h9g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZD-Nw-nxA">
+                                <rect key="frame" x="10" y="226" width="394" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EM-ZR-QDu">
+                                <rect key="frame" x="63" y="57" width="80" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ILF-Ph-t6C"/>
+                                    <constraint firstAttribute="height" constant="31" id="f5V-ti-mmL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Broncos">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseTeam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWh-4l-4Eg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.18431372549019609" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w3p-tt-te9" firstAttribute="top" secondItem="DYd-mD-COK" secondAttribute="bottom" constant="21" id="BVF-F2-j5n"/>
+                            <constraint firstAttribute="trailing" secondItem="kZD-Nw-nxA" secondAttribute="trailing" constant="10" id="Dz4-cS-NWE"/>
+                            <constraint firstItem="MsB-cW-jZB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-12" id="DzA-0Y-bWX"/>
+                            <constraint firstItem="kZD-Nw-nxA" firstAttribute="top" secondItem="w3p-tt-te9" secondAttribute="bottom" constant="14" id="Hjg-Y0-xPe"/>
+                            <constraint firstItem="w3p-tt-te9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hw2-Al-2r0"/>
+                            <constraint firstItem="kZD-Nw-nxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="JjA-y5-9Xd"/>
+                            <constraint firstItem="DYd-mD-COK" firstAttribute="leading" secondItem="6EM-ZR-QDu" secondAttribute="trailing" constant="24" id="Ltz-qx-M5D"/>
+                            <constraint firstItem="DYd-mD-COK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="O16-2n-h8O"/>
+                            <constraint firstItem="MsB-cW-jZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YLm-bH-JsF"/>
+                            <constraint firstAttribute="trailing" secondItem="w3p-tt-te9" secondAttribute="trailing" id="dnB-aE-XPS"/>
+                            <constraint firstItem="w3p-tt-te9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="109" id="kRj-mE-yqm"/>
+                            <constraint firstItem="eCS-NV-M9N" firstAttribute="leading" secondItem="DYd-mD-COK" secondAttribute="trailing" constant="22" id="m6u-cJ-9Bt"/>
+                            <constraint firstItem="6EM-ZR-QDu" firstAttribute="bottom" secondItem="DYd-mD-COK" secondAttribute="bottom" id="qFf-eh-urX"/>
+                            <constraint firstItem="w3p-tt-te9" firstAttribute="top" secondItem="eCS-NV-M9N" secondAttribute="bottom" constant="21" id="shs-CC-mi4"/>
+                            <constraint firstItem="w3p-tt-te9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wgQ-L4-WnE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="teamImage" destination="w3p-tt-te9" id="JA5-lX-3rb"/>
+                        <outlet property="teamInfo" destination="kZD-Nw-nxA" id="oFh-rg-r20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155.625" y="150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Colorado" width="640" height="426"/>
+    </resources>
+</document>
